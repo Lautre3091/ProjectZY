@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+#accordion {
+list-style: none;
+height: 200px;
+overflow: hidden;
+position : relative;
+}
+ 
+#accordion div{
+height: 200px;
+position:relative;
+overflow: hidden;
+} 
+ 
+#accordion div.section {
+float: left;
+width:5%;
+}
+#accordion div.choix {
+display: block;
+width: 100%;
+float: left;
+background-color:grey;
+}
+
+#accordion div.contenu{
+width: 0%;
+}
+
+#accordion div.active {
+width: 90%;
+}
+
+#accordion div.section.active div.choix {
+width: 5%;
+}
+
+#accordion div.section.active div.contenu {
+width: 95%;
+}
+
+#accordion div.liste{
+	height : auto;
+	padding : 3px;
+	margin : 5px;
+	position:relative;
+	color: buttonshadow;
+	background-color:buttontext;
+}
+#accordion div.liste.retour{
+	width: auto;
+	background-color: gray;
+	text-align: center;
+	color: black;
+}
+
+#accordion div.liste:hover{
+	cursor:pointer;
+}
+#accordion div.colonne1 {
+	float:left;
+	width:50%;
+}
+#accordion div.colonne2 {
+	width:50%;
+}
+#accordion .verticalText{
+    color:#333;
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    white-space:nowrap;
+    display:block;
+    font-size :20px;
+    margin-top : 150px;
+  	vertical-align:middle;
+  	text-align:center;
+  	width : 50px;
+}
+
+#affichage{
+	height:500px;
+}
+
+
+#affichageDossier{
+	height:500px;
+	width:50%;
+	float:left;
+	border:1px solid black;
+	overflow-y: scroll;
+} 
+
+#affichageInfoFichier{
+	height:500px;
+	width:50%;
+	margin-left:50%;
+	border:1px solid black;
+	overflow-y: scroll;
+} 
+
+span.actionFichier{
+float:right;
+}
+
+span.actionFichier, span.elementListe{
+cursor:pointer;
+
+}
